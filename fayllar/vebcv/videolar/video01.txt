@@ -1,0 +1,21 @@
+
+
+-Salam
+-VebCv videomuza xoş gəlmisiz
+-Bu gün sizə yeni vebcv-nizi necə yaradacagınızı göstərəcəyəm
+-İlk öncə vebcv.com səhifəsinə daxil oluruq.
+-Menyudan vebcv yaratı seçirik.
+-Burda ad soyad, nömrə, email, parol və domain adınızı yazmalsınız
+-Domain adı sizin vebsəhifənizin adı olacaq, məsələn - numune.vebcv.com
+-Artıq qeydiyyatdan keçməyə hazırıq
+-Açılan səhifədə email və parolumuzu daxil edib vebcv-mizi dizayn etməyə başlaya bilərik
+-Gördüyünüz panel tamamən sizə aiddir, burdan istədiyiniz kimi istifadə edə bilərsiz.
+-İndi isə, səhifənin başlanğıc səviyyəyə gəlməsi üçün parametrlər və haqqımızda hissəsini doldurmalıyıq.
+-Parametrlərdə səhifəmizin dilini, rəngini seçirik.
+-Saytın adı (vebcvinin titlesini misal göstərirsən) bu hissədə görünən addır
+-Email (vebcvinin email hisseini goster) bu hissədə görünən emaildir
+-Sehifenin ikonu  (vebcvinin icon hisseini goster) bu hissədə görünən logodur
+- Sehifenin wekli  (vebcvinin ana sehife hisseini goster) bu hissədə görünən wekil
+- Haqqimda (vebcvinin haqqinda hisseini goster) bu hissədə görünən wekiller
+-Kontakt (vebcvinin Kontakt hisseini goster) bu hissədə görünən wekiller
+

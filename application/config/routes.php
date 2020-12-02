@@ -56,6 +56,7 @@ $route['admin'] = 'admin/login';
 $route['post/(:any)/(:any)'] = 'post/index/$1/$2';
 $route['project/(:any)'] = 'project/index/$1';
 $route['portfolio/(.+)'] = 'home/portfolio/$1';
+$route['getpage/(.+)'] = 'home/getpage/$1';
 $route['register'] = 'Main/register';
 $route['clients'] = 'Main/clients';
 

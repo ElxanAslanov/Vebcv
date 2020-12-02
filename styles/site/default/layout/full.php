@@ -76,21 +76,21 @@
                     <div class="site-nav">
                         <!-- Main menu -->
                         <ul class="header-main-menu" id="header-main-menu">
-                            <li><a class="active" href="<?php echo base_url("portfolio/$slug/")?>#home"><i class="fas fa-home"></i> <?php echo lang('global_home') ?></a></li>
-                            <li><a href="<?php echo base_url("portfolio/$slug/")?>#about-me"><i class="fas fa-user-tie"></i> <?php echo lang('global_about') ?></a></li>
-                            <li><a href="<?php echo base_url("portfolio/$slug/")?>#resume"><i class="fas fa-award"></i> <?php echo lang('global_Resume') ?></a></li>
-                            <li><a href="<?php echo base_url("portfolio/$slug/")?>#portfolio"><i class="fas fa-business-time"></i> <?php echo lang('global_Portfolio') ?></a></li>
+                            <li><a class="active sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#home"><i class="fas fa-home"></i> <?php echo lang('global_home') ?></a></li>
+                            <li><a class="sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#about-me"><i class="fas fa-user-tie"></i> <?php echo lang('global_about') ?></a></li>
+                            <li><a class="sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#resume"><i class="fas fa-award"></i> <?php echo lang('global_Resume') ?></a></li>
+                            <li><a class="sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#portfolio"><i class="fas fa-business-time"></i> <?php echo lang('global_Portfolio') ?></a></li>
 
                             
                             <?php if(!empty($posts)){ ?>
                             
-                            <li><a href="<?php echo base_url("portfolio/$slug/")?>#blog"><i class="fas fa-book-reader"></i> <?php echo lang('global_Blog') ?></a>
+                            <li><a class="sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#blog"><i class="fas fa-book-reader"></i> <?php echo lang('global_Blog') ?></a>
                             </li>    
                                 
                             <?php } ?>
 
 
-                            <li><a href="<?php echo base_url("portfolio/$slug/")?>#contact"><i class="fas fa-paper-plane"></i> <?php echo lang('global_contact_me') ?></a></li>
+                            <li><a class="sectionChooser" href="<?php echo base_url("portfolio/$slug/")?>#contact"><i class="fas fa-paper-plane"></i> <?php echo lang('global_contact_me') ?></a></li>
                         
                             
                         
@@ -130,8 +130,11 @@
         <!-- Portfolio filter -->
         <script src="<?php echo STYLE_JS ?>/jquery.isotope.min.js"></script>
         <!-- Wow Animation -->
-        <script src="<?php echo STYLE_JS ?>/wow.min.js"></script>  
+        <script src="<?php echo STYLE_JS ?>/wow.min.js"></script>
         <!-- Map -->
+        <!--        Added JS-->
+        <script src="<?php echo STYLE_JS ?>/onepage.js"></script>
+        <!--        Added JS-->
         <!-- Main Script -->
         <?php if (config('language') == 'english' or config('language') == 'az' or config('language') == 'tr' or config('language') == 'ru'): ?>
             <script src="<?php echo STYLE_JS ?>/script.js"></script>

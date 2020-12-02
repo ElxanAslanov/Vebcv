@@ -3,7 +3,7 @@
 class Home extends CIF_Controller {
 
     public $layout = 'full';
-    public $module = 'about';
+    public $module = 'home';
     public $model = 'Projects_model';
 
     public function __construct() {
@@ -51,7 +51,7 @@ class Home extends CIF_Controller {
 
     public function getpage($slug) {
 
-        $this->layout = '';
+        $this->layout = 'default';
         $user_id = $this->db->where("slug", $slug)->get("users")->row()->user_id;
         $status = $this->db->where("slug", $slug)->get("users")->row()->status;
         if (empty($user_id)){

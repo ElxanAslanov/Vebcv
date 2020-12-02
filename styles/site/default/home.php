@@ -1,8 +1,7 @@
-
 <!-- Main Content Pages -->
 <div class="content-pages">
     <!-- Subpages -->
-    <div class="sub-home-pages">
+    <div id="url" class="sub-home-pages" data-url="<?php echo base_url('getpage/'.$slug); ?>">
         <!-- Start Page home -->
         <section id="home" class="sub-page start-page">
             <div class="sub-page-inner" style="background: url('<?php echo base_url() ?>/cdn/settings/<?php echo config('home_bg') ?>');">
@@ -60,7 +59,7 @@
                             <ul class="bout-list-summry row">
                                 <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                     <div class="icon-info">
-                                        <i class="lnr lnr-briefcase"></i> 
+                                        <i class="lnr lnr-briefcase"></i>
                                     </div>
                                     <div class="details-info">
                                         <h6><?php echo config('num_experience') ?>+ <?php echo lang('global_Years_Job') ?></h6>
@@ -69,7 +68,7 @@
                                 </li>
                                 <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                     <div class="icon-info">
-                                        <i class="lnr lnr-layers"></i> 
+                                        <i class="lnr lnr-layers"></i>
                                     </div>
                                     <div class="details-info">
                                         <h6><?php echo config('num_projects') ?>+ <?php echo lang('global_Projects') ?></h6>
@@ -78,7 +77,7 @@
                                 </li>
                                 <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                     <div class="icon-info">
-                                        <i class="lnr lnr-coffee-cup"></i> 
+                                        <i class="lnr lnr-coffee-cup"></i>
                                     </div>
                                     <div class="details-info">
                                         <h6><?php echo config('num_meetings') ?>+ <?php echo lang('global_Meetings') ?></h6>
@@ -105,10 +104,10 @@
                             </h4>
                         </div>
                         <div class="row">
-                            <?php foreach (array_chunk($services, 2) as $ma): ?>  
+                            <?php foreach (array_chunk($services, 2) as $ma): ?>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="services-list">
-                                        <?php foreach ($ma as $item): ?>  
+                                        <?php foreach ($ma as $item): ?>
                                             <div class="service-block">
                                                 <div class="service-icon">
                                                     <i><img src="<?php echo base_url() ?>/cdn/services/<?php echo $item->image ?>"/></i>
@@ -117,7 +116,7 @@
                                                     <h4><?php echo $item->title ?></h4>
                                                     <p>
                                                         <?php $this->load->helper('text') ?>
-                                                        <?php echo word_limiter($item->description, 30) ?> 
+                                                        <?php echo word_limiter($item->description, 30) ?>
                                                     </p>
                                                 </div>
                                             </div>
@@ -234,7 +233,7 @@
                             </div>
                             <!-- List Of Clients -->
                             <div class="clients owl-carousel">
-                                <?php foreach ($clients as $client): ?>  
+                                <?php foreach ($clients as $client): ?>
                                     <div class="client-block">
                                         <a href="#" target="_blank" title="<?php echo $client->title ?>">
                                             <img src="<?php echo base_url() ?>/cdn/clients/<?php echo $client->image ?>" alt="<?php echo $client->title ?>">
@@ -438,7 +437,7 @@
         <!-- /Portfolio Subpage -->
 
         <!-- Blog Subpage -->
-            <section id="blog" class="sub-page">
+        <section id="blog" class="sub-page">
                 <div class="sub-page-inner">
                     <div class="section-title">
                         <div class="main-title">

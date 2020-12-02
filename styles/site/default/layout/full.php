@@ -133,7 +133,7 @@
         <script src="<?php echo STYLE_JS ?>/wow.min.js"></script>
         <!-- Map -->
         <!--        Added JS-->
-        <script src="<?php echo STYLE_JS ?>/onepage.js"></script>
+
         <!--        Added JS-->
         <!-- Main Script -->
         <?php if (config('language') == 'english' or config('language') == 'az' or config('language') == 'tr' or config('language') == 'ru'): ?>
@@ -141,6 +141,7 @@
         <?php elseif (config('language') == 'arabic'): ?>
             <script src="<?php echo STYLE_JS ?>/script-rtl.js"></script>
         <?php endif ?>
+        <script src="<?php echo STYLE_JS ?>/onepage.js"></script>
        
     </body>
 </html>

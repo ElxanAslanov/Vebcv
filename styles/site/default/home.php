@@ -1,7 +1,7 @@
 <!-- Main Content Pages -->
-<div class="content-pages">
+<div class="content-pages" id="url" data-url="<?php echo base_url('getpage/'.$slug); ?>">
     <!-- Subpages -->
-    <div id="url" class="sub-home-pages" data-url="<?php echo base_url('getpage/'.$slug); ?>">
+    <div class="sub-home-pages" >
         <!-- Start Page home -->
         <section id="home" class="sub-page start-page">
             <div class="sub-page-inner" style="background: url('<?php echo base_url() ?>/cdn/settings/<?php echo config('home_bg') ?>');">
@@ -625,3 +625,5 @@
     <!-- /Page changer wrapper -->
 </div>
 <!-- /Main Content -->
+
+

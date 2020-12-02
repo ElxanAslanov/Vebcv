@@ -2,7 +2,8 @@ let nav = $('.sectionChooser');
 let request_url;
 let myurl;
 let hash;
-let baseUrl = document.getElementById('url').dataset.url;
+let baseUrl = $("#url").data("url");
+console.log(baseUrl);
 
 setUrl();
 
@@ -23,7 +24,7 @@ function setUrl() {
         hash = 'home';
     }
     request_url = baseUrl + '?section=' + hash;
-    alert(request_url);
+    console.log(request_url);
     getSection();
 }
 
